@@ -37,6 +37,7 @@ data:
 brain_model_output_size: &brain_model_output_size 1536
 trainer_config.monitor: val/batch_inv_norm_rank_mean
 trainer_config.mode: max
+trainer_config.precision: bf16-mixed
 loss:
   name: ClipLoss
   norm_kind: y
